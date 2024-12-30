@@ -17,7 +17,8 @@ export class InfraStack extends cdk.Stack {
       bucketName: 'demos3bucket202228',
       versioned: true,
       publicReadAccess: false,
-      removalPolicy:cdk.RemovalPolicy.DESTROY
+      removalPolicy:cdk.RemovalPolicy.DESTROY,
+      autoDeleteObjects:true
      })
   }
 }
