@@ -16,7 +16,8 @@ export class InfraStack extends cdk.Stack {
      const s3demobucket = new s3.Bucket(this, 's3demobucket2024' ,{
       bucketName: 'demos3bucket202228',
       versioned: true,
-      publicReadAccess: false
+      publicReadAccess: false,
+      removalPolicy:cdk.RemovalPolicy.DESTROY
      })
   }
 }
