@@ -15,10 +15,10 @@ export class InfraStack extends cdk.Stack {
     // });
     //lambda function
     const demolambda = new lambda.Function(this,'demologicalid', {
-      handler:'lambda_function.lampda_handler',
+      handler:'lambda_function.lambda_handler',
       runtime:lambda.Runtime.PYTHON_3_9,
       code:lambda.Code.fromAsset('../services/'),
-      functionName:'democdklampda'
+      functionName:'democdklambda'
      })
   }
 }
